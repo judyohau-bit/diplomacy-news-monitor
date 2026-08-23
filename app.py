@@ -1349,7 +1349,7 @@ def is_relevant(
     )
 
     text = title
-    text = f"{title} {description}"
+    text = title
 
 
     # -----------------------------------------------------
@@ -1640,7 +1640,7 @@ def is_relevant(
     # -----------------------------------------------------
 
     query_hit = any(
-        normalize(q) in title_text
+        normalize(q) in title
         for q in (
             ko_queries
             +
