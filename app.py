@@ -208,6 +208,8 @@ PUBLISHER_MAP = {
     "kmib.co.kr": "국민일보",
     "munhwa.com": "문화일보",
     "newspim.com": "뉴스핌",
+    "yonhapnewstv.co.kr": "연합뉴스TV",
+    "newsworks.co.kr": "뉴스웍스",
 
     # 해외
     "reuters.com": "Reuters",
@@ -244,7 +246,7 @@ def get_publisher(url, fallback=""):
                 # 매핑되지 않은 경우
         clean_name = domain.split(".")[0]
 
-        return fallback or domain or "언론사"
+        return fallback or clean_name or "언론사"
 
     except Exception:
 
