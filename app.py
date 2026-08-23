@@ -1170,18 +1170,9 @@ def expand_queries(keyword):
         # 외교업무 전용 사이트이므로
         # 일반 키워드도 외교 관련 조합까지 자동 탐색
         ko_queries = [
-            keyword,
-            f"{keyword} 외교부",
-            f"{keyword} 대사관",
-            f"{keyword} 영사",
-            f"{keyword} 재외국민"
         ]
 
         en_queries = [
-            translated,
-            f"{translated} foreign ministry",
-            f"{translated} embassy",
-            f"{translated} consular"
         ]
 
         return (
