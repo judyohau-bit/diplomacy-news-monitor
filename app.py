@@ -241,6 +241,8 @@ def get_publisher(url, fallback=""):
 
             if key in domain:
                 return value
+                # 매핑되지 않은 경우
+        clean_name = domain.split(".")[0]
 
         return fallback or domain or "언론사"
 
