@@ -1174,7 +1174,7 @@ def expand_queries(keyword):
         ]
 
         en_queries = [
-            keyword
+            translated,
         ]
 
         return (
