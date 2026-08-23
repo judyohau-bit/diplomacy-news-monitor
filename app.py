@@ -86,7 +86,7 @@ st.markdown(
     }
 
     div[data-testid="stTextInput"] input::placeholder {
-        font-size: 20px !important;
+        font-size: 15px !important;
     }
 
     div[data-testid="stDateInput"] input {
@@ -921,21 +921,10 @@ def expand_queries(keyword):
 
         ko_queries = [
             keyword,
-            f"{keyword} 외교부",
-            f"{keyword} 대사관",
-            f"{keyword} 영사",
-            f"{keyword} 재외국민",
-            f"{keyword} 해외안전",
-            f"{keyword} 공관"
         ]
 
         en_queries = [
             translated,
-            f"{translated} foreign ministry",
-            f"{translated} embassy",
-            f"{translated} consular",
-            f"{translated} travel advisory",
-            f"{translated} overseas nationals"
         ]
 
         return (
@@ -2009,9 +1998,9 @@ def show_article(article):
 
 
     st.markdown(
-        f"### [{title}]({link})"
-    )
-
+    f'<div class="news-title"><a href="{link}" target="_blank">{title}</a></div>',
+    unsafe_allow_html=True
+        )
 
     if description:
 
@@ -2272,7 +2261,7 @@ if st.button(
     # -----------------------------------------------------
 
     with st.spinner(
-        "국내·해외 언론에서 관련 기사 후보를 수집하고 있습니다..."
+        "국내·해외 언론에서 관련 기사를 수집하고 있습니다..."
     ):
 
         korean_articles = (
@@ -2484,8 +2473,7 @@ if st.button(
         if not all_articles:
 
             st.info(
-                "선택한 기간에 검색 주제와 외교 업무에 "
-                "동시에 관련된 기사를 찾지 못했습니다."
+                "선택한 기간에 검색 주제와 관련된 기사를 찾지 못했습니다."
             )
 
 
