@@ -419,18 +419,18 @@ PUBLISHER_MAP = {
     "defensenews.com": "Defense News",
     "janes.com": "Janes",
 
-    "state.gov": "U.S. Department of State"
-    "un.org": "United Nations"
-    "europa.eu": "European Union"
-    "who.int": "WHO"
-    "reuters.com": "Reuters"
-    "apnews.com": "AP"
-    "bbc.com": "BBC"
-    "aljazeera.com": "Al Jazeera"
-    "dw.com": "DW"
-    "france24.com": "France 24"
-    "nhk.or.jp": "NHK"
-    "scmp.com": "South China Morning Post"
+    "state.gov": "U.S. Department of State",
+    "un.org": "United Nations",
+    "europa.eu": "European Union",
+    "who.int": "WHO",
+    "reuters.com": "Reuters",
+    "apnews.com": "AP",
+    "bbc.com": "BBC",
+    "aljazeera.com": "Al Jazeera",
+    "dw.com": "DW",
+    "france24.com": "France 24",
+    "nhk.or.jp": "NHK",
+    "scmp.com": "South China Morning Post",
     
 }
 
