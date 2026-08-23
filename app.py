@@ -443,13 +443,13 @@ def get_publisher(url, fallback=""):
         domain = domain.replace("www.", "")
 
         for key, value in sorted(
-                PUBLISHER_MAP.items(),
-                key=lambda x: len(x[0]),
-                reverse=True
-            ):
+            PUBLISHER_MAP.items(),
+            key=lambda x: len(x[0]),
+            reverse=True
+        ):
 
-         if key in domain:
-         return value
+             if key in domain:
+                return value
 
                 # 매핑되지 않은 경우
         clean_name = domain.split(".")[0]
