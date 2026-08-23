@@ -1170,9 +1170,11 @@ def expand_queries(keyword):
         # 외교업무 전용 사이트이므로
         # 일반 키워드도 외교 관련 조합까지 자동 탐색
         ko_queries = [
+            keyword
         ]
 
         en_queries = [
+            keyword
         ]
 
         return (
