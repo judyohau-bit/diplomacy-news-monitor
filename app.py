@@ -1164,8 +1164,7 @@ def expand_queries(keyword):
 
         except Exception:
 
-            translated = keyword
-
+            translated = ""
 
         # 외교업무 전용 사이트이므로
         # 일반 키워드도 외교 관련 조합까지 자동 탐색
@@ -1201,16 +1200,10 @@ def expand_queries(keyword):
 
         ko_queries = [
             korean,
-            f"{korean} 외교부",
-            f"{korean} 대사관",
-            f"{korean} 영사"
         ]
 
         en_queries = [
             keyword,
-            f"{keyword} foreign ministry",
-            f"{keyword} embassy",
-            f"{keyword} consular"
         ]
 
         return (
@@ -1355,6 +1348,7 @@ def is_relevant(
         )
     )
 
+    text = title
     text = f"{title} {description}"
 
 
@@ -1646,7 +1640,7 @@ def is_relevant(
     # -----------------------------------------------------
 
     query_hit = any(
-        normalize(q) in text
+        normalize(q) in title_text
         for q in (
             ko_queries
             +
