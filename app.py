@@ -47,14 +47,14 @@ st.markdown(
     }
 
     h1 {
-        font-size: 38px !important;
+        font-size: 32px !important;
         font-weight: 800 !important;
         line-height: 1.2 !important;
         margin-bottom: 14px !important;
     }
 
     h2 {
-        font-size: 26px !important;
+        font-size: 23px !important;
         font-weight: 750 !important;
         line-height: 1.4 !important;
     }
@@ -66,17 +66,17 @@ st.markdown(
     }
 
     p {
-        font-size: 17px !important;
+        font-size: 15px !important;
         line-height: 1.75 !important;
     }
 
     label {
-        font-size: 16px !important;
+        font-size: 15px !important;
         font-weight: 600 !important;
     }
 
     div[data-testid="stRadio"] p {
-        font-size: 16px !important;
+        font-size: 17px !important;
     }
 
     div[data-testid="stTextInput"] input {
@@ -125,13 +125,13 @@ st.markdown(
 
     .news-meta {
         color: #999999;
-        font-size: 16px;
+        font-size: 14px;
         margin-top: 10px;
         margin-bottom: 22px;
     }
 
     .news-source {
-        font-size: 16px;
+        font-size: 15px;
         font-weight: 700;
     }
 
