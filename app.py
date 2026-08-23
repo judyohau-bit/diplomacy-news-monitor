@@ -211,6 +211,102 @@ PUBLISHER_MAP = {
     "yonhapnewstv.co.kr": "연합뉴스TV",
     "newsworks.co.kr": "뉴스웍스",
 
+    "yna.co.kr": "연합뉴스",
+    "yonhapnewstv.co.kr": "연합뉴스TV",
+    "seoul.co.kr": "서울신문",
+    "sedaily.com": "서울경제",
+    "bizwatch.co.kr": "비즈워치",
+    "biz.chosun.com": "조선비즈",
+    "etnews.com": "전자신문",
+    "zdnet.co.kr": "ZDNET Korea",
+    "dt.co.kr": "디지털타임스",
+    "bloter.net": "블로터",
+    "ohmynews.com": "오마이뉴스",
+    "pressian.com": "프레시안",
+    "newdaily.co.kr": "뉴데일리",
+    "newsis.com": "뉴시스",
+    "inews24.com": "아이뉴스24",
+    "inews365.com": "충북일보",
+    "idaegu.co.kr": "대구일보",
+    "daejonilbo.com": "대전일보",
+
+        # 국내 추가
+
+    "seoul.co.kr": "서울신문",
+    "segye.com": "세계일보",
+    "kmib.co.kr": "국민일보",
+    "hankyung.com": "한국경제",
+    "sedaily.com": "서울경제",
+
+    "joongdo.co.kr": "중도일보",
+    "daejonilbo.com": "대전일보",
+    "cctoday.co.kr": "충청투데이",
+    "ccdailynews.com": "충청일보",
+    "inews365.com": "충북일보",
+    "idaegu.co.kr": "대구일보",
+    "yeongnam.com": "영남일보",
+    "kado.net": "강원도민일보",
+    "kwnews.co.kr": "강원일보",
+    "busan.com": "부산일보",
+    "kookje.co.kr": "국제신문",
+    "knnews.co.kr": "경남신문",
+
+    "ohmynews.com": "오마이뉴스",
+    "pressian.com": "프레시안",
+    "newdaily.co.kr": "뉴데일리",
+    "dailian.co.kr": "데일리안",
+    "m-i.kr": "매일일보",
+    "breaknews.com": "브레이크뉴스",
+    "viewsnnews.com": "뷰스앤뉴스",
+    "mediatoday.co.kr": "미디어오늘",
+
+    "huffingtonpost.kr": "허핑턴포스트코리아",
+    "sisajournal.com": "시사저널",
+    "sisain.co.kr": "시사IN",
+    "weekly.chosun.com": "주간조선",
+
+    "etnews.com": "전자신문",
+    "zdnet.co.kr": "ZDNET Korea",
+    "ddaily.co.kr": "디지털데일리",
+    "itdaily.kr": "아이티데일리",
+    "inews24.com": "아이뉴스24",
+    "bloter.net": "블로터",
+
+    "gameinsight.co.kr": "게임인사이트",
+
+    "khan.co.kr": "경향신문",
+    "hani.co.kr": "한겨레",
+    "ohmynews.com": "오마이뉴스",
+
+    "lawtimes.co.kr": "법률신문",
+    "legalinsight.co.kr": "리걸인사이트",
+
+    "fnnews.com": "파이낸셜뉴스",
+    "heraldcorp.com": "헤럴드경제",
+    "biz.heraldcorp.com": "헤럴드경제",
+
+    "wowtv.co.kr": "한국경제TV",
+    "wowtv.hankyung.com": "한국경제TV",
+
+    "tvchosun.com": "TV조선",
+    "ichannela.com": "채널A",
+    "mbn.co.kr": "MBN",
+    "jtbc.co.kr": "JTBC",
+    "sbs.co.kr": "SBS",
+    "sbsnews.co.kr": "SBS뉴스",
+    "kbs.co.kr": "KBS",
+    "imnews.imbc.com": "MBC",
+
+    "lawtimes.co.kr": "법률신문",
+    "hankyung.com": "한국경제",
+    "mk.co.kr": "매일경제",
+    "yna.co.kr": "연합뉴스",
+    "news1.kr": "뉴스1",
+    "newsis.com": "뉴시스",
+    "edaily.co.kr": "이데일리",
+    "seoul.co.kr": "서울신문",
+    "segye.com": "세계일보",
+
     # 해외
     "reuters.com": "Reuters",
     "apnews.com": "AP",
@@ -229,6 +325,113 @@ PUBLISHER_MAP = {
     "abcnews.go.com": "ABC News",
     "foxnews.com": "Fox News",
     "forbes.com": "Forbes",
+
+        # 해외 추가
+
+    # 영미권 주요 언론
+    "wsj.com": "The Wall Street Journal",
+    "wsj.com": "The Wall Street Journal",
+    "time.com": "TIME",
+    "newsweek.com": "Newsweek",
+    "economist.com": "The Economist",
+    "axios.com": "Axios",
+    "thehill.com": "The Hill",
+    "theatlantic.com": "The Atlantic",
+    "vanityfair.com": "Vanity Fair",
+
+    # 미국 주요 방송·통신
+    "usatoday.com": "USA Today",
+    "cnbc.com": "CNBC",
+    "msnbc.com": "MSNBC",
+    "abcnews.com": "ABC News",
+    "pbs.org": "PBS",
+    "voanews.com": "Voice of America",
+    "rferl.org": "Radio Free Europe/Radio Liberty",
+
+    # 영국
+    "independent.co.uk": "The Independent",
+    "telegraph.co.uk": "The Telegraph",
+    "dailymail.co.uk": "Daily Mail",
+    "mirror.co.uk": "Daily Mirror",
+    "skynews.com": "Sky News",
+    "channel4.com": "Channel 4 News",
+
+    # 캐나다
+    "cbc.ca": "CBC",
+    "ctvnews.ca": "CTV News",
+    "globalnews.ca": "Global News",
+
+    # 호주
+    "abc.net.au": "ABC Australia",
+    "sbs.com.au": "SBS Australia",
+    "news.com.au": "news.com.au",
+    "smh.com.au": "The Sydney Morning Herald",
+
+    # 일본
+    "nhk.or.jp": "NHK",
+    "nhk.jp": "NHK",
+    "japantimes.co.jp": "The Japan Times",
+    "asahi.com": "Asahi Shimbun",
+    "mainichi.jp": "Mainichi Shimbun",
+    "yomiuri.co.jp": "Yomiuri Shimbun",
+    "nikkei.com": "Nikkei",
+
+    # 중국·홍콩·대만
+    "scmp.com": "South China Morning Post",
+    "globaltimes.cn": "Global Times",
+    "chinadaily.com.cn": "China Daily",
+    "xinhuanet.com": "Xinhua",
+    "taipeitimes.com": "Taipei Times",
+
+    # 유럽
+    "dw.com": "DW",
+    "france24.com": "France 24",
+    "lemonde.fr": "Le Monde",
+    "lefigaro.fr": "Le Figaro",
+    "euronews.com": "Euronews",
+    "politico.eu": "POLITICO Europe",
+    "spiegel.de": "Der Spiegel",
+    "faz.net": "Frankfurter Allgemeine Zeitung",
+
+    # 러시아·동유럽
+    "tass.com": "TASS",
+    "rt.com": "RT",
+    "kyivindependent.com": "The Kyiv Independent",
+
+    # 중동
+    "aljazeera.com": "Al Jazeera",
+    "arabnews.com": "Arab News",
+    "middleeasteye.net": "Middle East Eye",
+    "timesofisrael.com": "The Times of Israel",
+    "haaretz.com": "Haaretz",
+
+    # 인도·아시아
+    "hindustantimes.com": "Hindustan Times",
+    "thehindu.com": "The Hindu",
+    "indianexpress.com": "The Indian Express",
+    "straitstimes.com": "The Straits Times",
+    "channelnewsasia.com": "CNA",
+    "bangkokpost.com": "Bangkok Post",
+
+    # 국제 전문·외교 분야
+    "foreignpolicy.com": "Foreign Policy",
+    "foreignaffairs.com": "Foreign Affairs",
+    "defensenews.com": "Defense News",
+    "janes.com": "Janes",
+
+    "state.gov": "U.S. Department of State"
+    "un.org": "United Nations"
+    "europa.eu": "European Union"
+    "who.int": "WHO"
+    "reuters.com": "Reuters"
+    "apnews.com": "AP"
+    "bbc.com": "BBC"
+    "aljazeera.com": "Al Jazeera"
+    "dw.com": "DW"
+    "france24.com": "France 24"
+    "nhk.or.jp": "NHK"
+    "scmp.com": "South China Morning Post"
+    
 }
 
 
@@ -239,10 +442,15 @@ def get_publisher(url, fallback=""):
         domain = urlparse(url).netloc.lower()
         domain = domain.replace("www.", "")
 
-        for key, value in PUBLISHER_MAP.items():
+        for key, value in sorted(
+                PUBLISHER_MAP.items(),
+                key=lambda x: len(x[0]),
+                reverse=True
+            ):
 
-            if key in domain:
-                return value
+    if key in domain:
+        return value
+
                 # 매핑되지 않은 경우
         clean_name = domain.split(".")[0]
 
