@@ -76,21 +76,21 @@ st.markdown(
     }
 
     div[data-testid="stRadio"] p {
-        font-size: 17px !important;
+        font-size: 16px !important;
     }
 
     div[data-testid="stTextInput"] input {
-        font-size: 17px !important;
+        font-size: 16px !important;
         min-height: 40px !important;
         padding-left: 16px !important;
     }
 
     div[data-testid="stTextInput"] input::placeholder {
-        font-size: 15px !important;
+        font-size: 16px !important;
     }
 
     div[data-testid="stDateInput"] input {
-        font-size: 20px !important;
+        font-size: 16px !important;
         min-height: 52px !important;
     }
 
@@ -112,8 +112,14 @@ st.markdown(
     }
 
     button[data-baseweb="tab"] {
-        font-size: 20px !important;
+        font-size: 16px !important;
         font-weight: 600 !important;
+    }
+
+    .news-title {
+            font-size: 18px;
+            font-weight: 700;
+            line-height: 1.5;
     }
 
     .news-desc {
@@ -136,17 +142,17 @@ st.markdown(
     }
 
     div[data-testid="stMetricLabel"] {
-        font-size: 20px !important;
+        font-size: 17px !important;
         font-weight: 600 !important;
     }
 
     div[data-testid="stMetricValue"] {
-        font-size: 20px !important;
+        font-size: 17px !important;
         font-weight: 750 !important;
     }
 
     div[data-testid="stAlert"] p {
-        font-size: 20px !important;
+        font-size: 17px !important;
     }
 
     hr {
