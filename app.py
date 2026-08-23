@@ -47,31 +47,31 @@ st.markdown(
     }
 
     h1 {
-        font-size: 54px !important;
+        font-size: 38px !important;
         font-weight: 800 !important;
         line-height: 1.2 !important;
         margin-bottom: 14px !important;
     }
 
     h2 {
-        font-size: 38px !important;
+        font-size: 26px !important;
         font-weight: 750 !important;
         line-height: 1.4 !important;
     }
 
     h3 {
-        font-size: 29px !important;
+        font-size: 18px !important;
         font-weight: 700 !important;
         line-height: 1.5 !important;
     }
 
     p {
-        font-size: 21px !important;
+        font-size: 17px !important;
         line-height: 1.75 !important;
     }
 
     label {
-        font-size: 21px !important;
+        font-size: 17px !important;
         font-weight: 600 !important;
     }
 
@@ -125,7 +125,7 @@ st.markdown(
 
     .news-meta {
         color: #999999;
-        font-size: 17px;
+        font-size: 18px;
         margin-top: 10px;
         margin-bottom: 22px;
     }
@@ -141,12 +141,12 @@ st.markdown(
     }
 
     div[data-testid="stMetricValue"] {
-        font-size: 38px !important;
+        font-size: 20px !important;
         font-weight: 750 !important;
     }
 
     div[data-testid="stAlert"] p {
-        font-size: 19px !important;
+        font-size: 20px !important;
     }
 
     hr {
@@ -2049,13 +2049,6 @@ def show_article(article):
 st.title(
     "📰 업무 뉴스 모니터링"
 )
-
-st.write(
-    "검색어를 국내·해외 표현으로 자동 확장하여 "
-    "외교·영사·사증·재외국민·해외안전 등 실제 업무와 "
-    "관련성이 높은 기사만 선별합니다."
-)
-
 
 st.subheader(
     "검색 조건"
