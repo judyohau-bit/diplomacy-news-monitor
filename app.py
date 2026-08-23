@@ -448,8 +448,8 @@ def get_publisher(url, fallback=""):
                 reverse=True
             ):
 
-    if key in domain:
-        return value
+         if key in domain:
+         return value
 
                 # 매핑되지 않은 경우
         clean_name = domain.split(".")[0]
