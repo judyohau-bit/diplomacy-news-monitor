@@ -1569,26 +1569,26 @@ def is_relevant(
 
     if intent == "mofa":
 
-        if any(
+    if any(
             normalize(term) in text
             for term in PROPERTY_CONTEXT
         ):
             return False
 
          diplomacy_terms = [
-        "외교",
-        "외교부",
-        "외교장관",
-        "영사",
-        "대사관",
-        "재외국민",
-        "협정",
-        "비자",
-        "사증",
-        "diplomatic",
-        "embassy",
-        "consular"
-    ]
+            "외교",
+            "외교부",
+            "외교장관",
+            "영사",
+            "대사관",
+            "재외국민",
+            "협정",
+            "비자",
+            "사증",
+            "diplomatic",
+            "embassy",
+            "consular"
+        ]
 
     hits = sum(
         1
@@ -1596,7 +1596,7 @@ def is_relevant(
         if term in text
     )
 
-    return hits >= 1
+        return hits >= 1
 
 # -----------------------------------------------------
 # 외교부
