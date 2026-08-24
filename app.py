@@ -1715,13 +1715,13 @@ if intent == "mofa":
             "meeting"
             ]
 
-    hits = sum(
+        hits = sum(
         1
         for term in international_terms
         if term in text
-    )
+        )
 
-    return hits >= 1
+        return hits >= 1
 
 
     # -----------------------------------------------------
