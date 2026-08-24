@@ -1594,24 +1594,24 @@ def is_relevant(
         diplomacy_terms = [
             if intent == "international":
 
-    international_terms = [
-        "회담",
-        "정상회담",
-        "정상회의",
-        "외교",
-        "외교장관",
-        "국제",
-        "양국",
-        "양자",
-        "다자",
-        "협상",
-        "협의",
-        "정상",
-        "summit",
-        "diplomatic",
-        "international",
-        "talks",
-        "meeting"
+             international_terms = [
+                 "회담",
+                 "정상회담",
+                 "정상회의",
+                 "외교",
+                 "외교장관",
+                 "국제",
+                 "양국",
+                 "양자",
+                 "다자",
+                 "협상",
+                 "협의",
+                 "정상",
+                 "summit",
+                 "diplomatic",
+                 "international",
+                 "talks",
+                 "meeting"
     ]
 
     return any(
