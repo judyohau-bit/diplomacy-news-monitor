@@ -763,6 +763,22 @@ POLICY_CONTEXT = {
 
 QUERY_RULES = {
 
+    "회담": {
+    "intent": "mofa",
+    "ko": [
+        "회담",
+        "정상회담",
+        "장관회담",
+        "협의"
+    ],
+    "en": [
+        "summit",
+        "meeting",
+        "talks",
+        "bilateral talks"
+    ]
+},
+    
     "비자": {
         "intent": "visa",
         "ko": [
