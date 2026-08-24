@@ -1542,6 +1542,18 @@ def is_relevant(
             if term in text
         )
 
+        priority_terms = [
+            "회담",
+            "정상회담",
+            "비자",
+            "사증",
+            "영사",
+            "대사관",
+            "재외국민"
+        ]
+        
+        if any(term in text for term in priority_terms):
+            return True
         return hits >= 2
 
 
