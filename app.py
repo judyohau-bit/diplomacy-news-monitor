@@ -819,22 +819,6 @@ QUERY_RULES = {
         "global"
     ]
 },
-
-    "회담": {
-    "intent": "mofa",
-    "ko": [
-        "회담",
-        "정상회담",
-        "장관회담",
-        "협의"
-    ],
-    "en": [
-        "summit",
-        "meeting",
-        "talks",
-        "bilateral talks"
-    ]
-},
     
     "비자": {
         "intent": "visa",
@@ -1591,49 +1575,47 @@ def is_relevant(
         ):
             return False
 
-        diplomacy_terms = [
-            if intent == "international":
+# ----------------------------------------------
+# 국제 / 정상회담 / 외교 뉴스
+# ----------------------------------------------
 
-             international_terms = [
-                 "회담",
-                 "정상회담",
-                 "정상회의",
-                 "외교",
-                 "외교장관",
-                 "국제",
-                 "양국",
-                 "양자",
-                 "다자",
-                 "협상",
-                 "협의",
-                 "정상",
-                 "summit",
-                 "diplomatic",
-                 "international",
-                 "talks",
-                 "meeting"
+if intent == "international":
+
+    international_terms = [
+        "회담",
+        "정상회담",
+        "정상회의",
+        "외교",
+        "외교장관",
+        "국제",
+        "양국",
+        "양자",
+        "다자",
+        "협상",
+        "협의",
+        "summit",
+        "diplomatic",
+        "international",
+        "talks",
+        "meeting"
     ]
 
     return any(
         term in text
         for term in international_terms
     )
-            "외교",
-            "외교장관",
-            "영사",
-            "대사관",
-            "공관",
-            "재외국민",
-            "국제",
-            "협정",
-            "회담",
-            "비자",
-            "사증",
-            "foreign",
-            "diplomatic",
-            "embassy",
-            "consular"
-        ]
+
+
+if intent == "mofa":
+
+    diplomacy_terms = [
+        ...
+    ]
+
+
+# -----------------------------------------------------
+# 외교부
+# -----------------------------------------------------
 
         hits = sum(
             1
