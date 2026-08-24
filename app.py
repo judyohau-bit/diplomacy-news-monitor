@@ -762,6 +762,63 @@ POLICY_CONTEXT = {
 # =========================================================
 
 QUERY_RULES = {
+    "회담": {
+    "intent": "international",
+    "ko": [
+        "회담",
+        "정상회담",
+        "장관회담",
+        "협의",
+        "정상회의"
+    ],
+    "en": [
+        "summit",
+        "meeting",
+        "talks",
+        "leaders meeting"
+    ]
+},
+
+"정상회담": {
+    "intent": "international",
+    "ko": [
+        "정상회담",
+        "회담",
+        "정상회의"
+    ],
+    "en": [
+        "summit",
+        "leaders meeting",
+        "summit talks"
+    ]
+},
+
+"외교": {
+    "intent": "international",
+    "ko": [
+        "외교",
+        "외교정책",
+        "외교장관"
+    ],
+    "en": [
+        "diplomacy",
+        "foreign policy",
+        "diplomatic"
+    ]
+},
+
+"국제": {
+    "intent": "international",
+    "ko": [
+        "국제",
+        "국제사회",
+        "국제기구"
+    ],
+    "en": [
+        "international",
+        "global"
+    ]
+},
 
     "회담": {
     "intent": "mofa",
@@ -1535,6 +1592,32 @@ def is_relevant(
             return False
 
         diplomacy_terms = [
+            if intent == "international":
+
+    international_terms = [
+        "회담",
+        "정상회담",
+        "정상회의",
+        "외교",
+        "외교장관",
+        "국제",
+        "양국",
+        "양자",
+        "다자",
+        "협상",
+        "협의",
+        "정상",
+        "summit",
+        "diplomatic",
+        "international",
+        "talks",
+        "meeting"
+    ]
+
+    return any(
+        term in text
+        for term in international_terms
+    )
             "외교",
             "외교장관",
             "영사",
@@ -1559,8 +1642,6 @@ def is_relevant(
         )
 
         priority_terms = [
-            "회담",
-            "정상회담",
             "비자",
             "사증",
             "영사",
