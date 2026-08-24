@@ -1575,37 +1575,6 @@ def is_relevant(
         ):
             return False
 
-# ----------------------------------------------
-# 국제 / 정상회담 / 외교 뉴스
-# ----------------------------------------------
-
-if intent == "international":
-
-    international_terms = [
-        "회담",
-        "정상회담",
-        "정상회의",
-        "외교",
-        "외교장관",
-        "국제",
-        "양국",
-        "양자",
-        "다자",
-        "협상",
-        "협의",
-        "summit",
-        "diplomatic",
-        "international",
-        "talks",
-        "meeting"
-    ]
-
-    return any(
-        term in text
-        for term in international_terms
-    )
-
-
 if intent == "mofa":
 
     diplomacy_terms = [
@@ -1722,6 +1691,37 @@ if intent == "mofa":
             and
             diplomacy_hit
         )
+
+    # ----------------------------------------------
+    # 국제 / 정상회담 / 외교 뉴스
+    # ----------------------------------------------
+
+    if intent == "international":
+
+        international_terms = [
+            "회담",
+            "정상회담",
+            "정상회의",
+            "외교",
+            "외교장관",
+            "양국",
+            "양자",
+            "다자",
+            "협상",
+            "협의",
+            "summit",
+            "diplomatic",
+            "talks",
+            "meeting"
+            ]
+
+    hits = sum(
+        1
+        for term in international_terms
+        if term in text
+    )
+
+    return hits >= 1
 
 
     # -----------------------------------------------------
