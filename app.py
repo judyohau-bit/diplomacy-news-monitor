@@ -1575,17 +1575,34 @@ def is_relevant(
         ):
             return False
 
-if intent == "mofa":
-
-    diplomacy_terms = [
-        ...
+         diplomacy_terms = [
+        "외교",
+        "외교부",
+        "외교장관",
+        "영사",
+        "대사관",
+        "재외국민",
+        "협정",
+        "비자",
+        "사증",
+        "diplomatic",
+        "embassy",
+        "consular"
     ]
 
+    hits = sum(
+        1
+        for term in diplomacy_terms
+        if term in text
+    )
+
+    return hits >= 1
 
 # -----------------------------------------------------
 # 외교부
 # -----------------------------------------------------
 
+        
         hits = sum(
             1
             for term in diplomacy_terms
