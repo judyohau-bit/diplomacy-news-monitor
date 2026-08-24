@@ -1562,64 +1562,43 @@ def is_relevant(
         # 실제 업무 관련 문맥 필요
         return policy_hits >= 1
 
-
     # -----------------------------------------------------
     # 외교부
     # -----------------------------------------------------
 
     if intent == "mofa":
 
-    if any(
-        normalize(term) in text
-        for term in PROPERTY_CONTEXT
-    ):
-        return False
+        if any(
+            normalize(term) in text
+            for term in PROPERTY_CONTEXT
+        ):
+            return False
 
-    diplomacy_terms = [
-        "외교",
-        "외교부",
-        "외교장관",
-        "영사",
-        "대사관",
-        "재외국민",
-        "협정",
-        "비자",
-        "사증",
-        "diplomatic",
-        "embassy",
-        "consular"
-    ]
 
-    hits = sum(
-        1
-        for term in diplomacy_terms
-        if term in text
-    )
+        diplomacy_terms = [
+            "외교",
+            "외교부",
+            "외교장관",
+            "영사",
+            "대사관",
+            "재외국민",
+            "협정",
+            "비자",
+            "사증",
+            "diplomatic",
+            "embassy",
+            "consular"
+        ]
 
-    return hits >= 1
-# -----------------------------------------------------
-# 외교부
-# -----------------------------------------------------
 
-        
         hits = sum(
             1
             for term in diplomacy_terms
             if term in text
         )
 
-        priority_terms = [
-            "비자",
-            "사증",
-            "영사",
-            "대사관",
-            "재외국민"
-        ]
-        
-        if any(term in text for term in priority_terms):
-            return True
-        return hits >= 2
 
+        return hits >= 1
 
     # -----------------------------------------------------
     # 대사관
